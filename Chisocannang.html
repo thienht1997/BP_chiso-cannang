@@ -12,13 +12,13 @@
 	var height = parseInt(prompt("Nhap chieu cao"));
 	var bmi = weight / height*height
 	if (bmi < 18)
-    	document.write("Underweight");
+    	confirm('Underweight');
 	else if (bmi < 25.0)
-    	document.write("Normal");
+    	confirm('Normal');
 	else if (bmi < 30.0)
-    	document.write("Overweight");
+    	confirm('Overweight');
 	else
-    	document.write("Obese");	
+    	confirm('Obese');	
 </script>
 </body>
 </html>

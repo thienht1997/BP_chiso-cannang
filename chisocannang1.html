@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Chi so can nang</title>
+	<link rel="stylesheet" href="">
+    <style>
+    .weight{
+    width: 13%;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+  	display: inline-block;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+    }
+    .button {
+  	background-color: #4CAF50;
+  	border: none;
+  	color: white;
+  	padding: 15px 8px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 14px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+    }
+    </style>
+    
+</head>
+<body>
+	<d1>Weight (kg)</d1>
+    <input type="number" class="weight" id="weight">
+    <d2>Hight (m)</d2>
+    <input type="number" class="weight" id="hight">
+    <div>
+    </div>
+    <input type="button" class ="button" value="Result »" onclick="ketqua()">
+ <script>
+   
+	function ketqua(){
+	var weight = parseFloat(document.getElementById("weight").value);
+	var hight = parseFloat(document.getElementById("hight").value);
+	var bmi = weight / hight*hight;
+	if (bmi < 18)
+    	confirm('Underweight');
+	else if (bmi < 25.0)
+    	confirm('Normal');
+	else if (bmi < 30.0)
+    	confirm('Overweight');
+	else
+    	confirm('Obese');	
+    }
+ </script>
+
+</body></html>
