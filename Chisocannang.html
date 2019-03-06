@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Chi so can nang</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<script>
+	var weight = parseInt(prompt("Nhap so can nang"));
+	var height = parseInt(prompt("Nhap chieu cao"));
+	var bmi = weight / height*height
+	if (bmi < 18)
+    	document.write("Underweight");
+	else if (bmi < 25.0)
+    	document.write("Normal");
+	else if (bmi < 30.0)
+    	document.write("Overweight");
+	else
+    	document.write("Obese");	
+</script>
+</body>
+</html>
